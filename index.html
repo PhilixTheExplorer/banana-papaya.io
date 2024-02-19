@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Superman's Experiment</title>
+    <link rel="icon" href="img/super-icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" />
+</head>
+
+<body>
+    <h2>THE BANANA PAPAYA EXPERIMENT</h2>
+    <div id="center">
+        <div id="info">
+            <p>
+                Superman runs an experiment to measure two (2) quantities on the planet Krypton under different temperatures. One quantity has the unit of Bananas, and the other has the unit of Papayas. Superman discovers that both quantities are proportional to one
+                another, and both of them are also proportional to the temperature, in Kelvin. He derives the following equation to express their relations:
+            </p>
+            <p><strong>B1 x P1 / K1 = B2 x P2 / K2</strong></p>
+            <p>
+                where B = Bananas, P = Papayas, K = Temperature in Kelvin and subscript, 1 and 2, denotes 2 different quantities. However, You can also find for celsius and fahrenheit.
+            </p>
+            <img id="fly" src="img/fly-sky.gif" />
+        </div>
+
+        <form id="calculator">
+            <div class="form-row">
+                <img src="img/banana-icon.svg">
+                <label for="b1">B1</label>
+                <input type="number" step="0.01" id="b1" name="b1" /><span>Bananas</span>
+            </div>
+            <div class="form-row">
+                <img src="img/banana-icon.svg">
+                <label for="b2">B2</label>
+                <input type="number" step="0.01" id="b2" name="b2" /><span>Bananas</span>
+            </div>
+            <div class="form-row">
+                <img src="img/papaya.png">
+                <label for="p1">P1</label>
+                <input type="number" step="0.01" id="p1" name="p1" /><span>Papayas</span>
+            </div>
+            <div class="form-row">
+                <img src="img/papaya.png">
+                <label for="p2">P2</label>
+                <input type="number" step="0.01" id="p2" name="p2" /><span>Papayas</span>
+            </div>
+            <div class="form-row">
+                <img src="img/kelvin.png">
+                <label for="k1">T1</label>
+                <input type="number" step="0.01" id="k1" name="k1" /><span>Temperature</span>
+            </div>
+            <div class="form-row">
+                <img src="img/kelvin.png">
+                <label for="k2">T2</label>
+                <input type="number" step="0.01" id="k2" name="k2" /><span>Temperature</span>
+            </div>
+            <div class="btns">
+                <button class="button-85" type="button" onclick="experiment()" id="kelvin">
+          Kelvin
+        </button>
+                <button class="button-85" type="button" onclick="setTemperatureUnit('C')" id="celsius">
+          Celsius
+        </button>
+                <button class="button-85" type="button" onclick="setTemperatureUnit('F')" id="fahrenheit">
+          Fahrenheit
+        </button>
+            </div>
+            <button class="button-54" type="button" onclick="clearForm()" id="clear">
+        Clear Form
+      </button>
+        </form>
+    </div>
+
+    <div id="btns">
+        <button class="button-50" type="button" onclick="showInfo()" id="home">
+      Go to Calculator
+    </button>
+    </div>
+</body>
+
+</html>
